@@ -52,8 +52,10 @@ export default {
         flex-direction: row;
         padding: 1rem;
         text-decoration: none;
+        height: 72px;
 
         &--logo {
+          display: inline-block;
           width: 3rem;
           max-height: 3rem;
           margin-right: 1rem;
