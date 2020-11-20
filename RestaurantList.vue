@@ -57,7 +57,7 @@ export default {
         &--logo {
           display: inline-block;
           width: 3rem;
-          max-height: 3rem;
+          height: 3rem;
           margin-right: 1rem;
         }
 
