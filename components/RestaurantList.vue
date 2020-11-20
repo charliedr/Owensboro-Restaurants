@@ -3,7 +3,7 @@
     <h1 class="restaurantList__title">All Restaurants</h1>
     <ul>
       <li v-for="restaurant in restaurants" :key="restaurant.name">
-        <NuxtLink class="restaurantList__item" to="/" style="height: 72px;">
+        <NuxtLink class="restaurantList__item" to="/">
           <img class="restaurantList__item--logo" :src="`${restaurant.logo}`" style="width: 3rem; height: auto;">
           <div class="restaurantList__item--content">
             <div class="restaurantList__item--content-title">{{ restaurant.name }}</div>
