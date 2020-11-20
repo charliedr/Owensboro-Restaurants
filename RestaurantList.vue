@@ -59,9 +59,7 @@ export default {
         height: 72px;
 
         &--logo-wrapper {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          display: block;
           width: 3rem;
           height: 3rem;
           margin-right: 1rem;
