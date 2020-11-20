@@ -51,13 +51,14 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
         padding: 1rem;
         text-decoration: none;
         height: 72px;
 
         &--logo {
           width: 3rem;
-          height: 3rem;
+          height: auto;
           margin-right: 1rem;
         }
 
