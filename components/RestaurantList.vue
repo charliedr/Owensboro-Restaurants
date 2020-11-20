@@ -3,8 +3,8 @@
     <h1 class="restaurantList__title">All Restaurants</h1>
     <ul>
       <li v-for="restaurant in restaurants" :key="restaurant.name">
-        <NuxtLink class="restaurantList__item" to="/">
-          <img class="restaurantList__item--logo" :src="`${restaurant.logo}`">
+        <NuxtLink class="restaurantList__item" to="/" style="height: 72px;">
+          <img class="restaurantList__item--logo" :src="`${restaurant.logo}`" style="width: 3rem; height: auto;">
           <div class="restaurantList__item--content">
             <div class="restaurantList__item--content-title">{{ restaurant.name }}</div>
             <div class="restaurantList__item--content-category">{{ restaurant.category }}</div>
@@ -48,19 +48,19 @@ export default {
       border-radius: 8px;
 
       .restaurantList__item {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 3rem 1fr 3rem;
+        gap: 1rem;
         padding: 1rem;
         text-decoration: none;
+        height: 72px;
 
         &--logo {
-          width: 3rem;
-          height: auto;
-          margin-right: 1rem;
+          max-width: 3rem;
+          max-height: 3rem;;
         }
 
         &--content {
-          margin-right: 1rem;
 
           &-title {
             font-size: 17px;
