@@ -59,6 +59,7 @@ export default {
         height: 72px;
 
         &--logo-wrapper {
+          display: inline-block;
           width: 3rem;
           height: 3rem;
           margin-right: 1rem;
