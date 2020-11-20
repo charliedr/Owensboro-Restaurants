@@ -50,12 +50,12 @@ export default {
       .restaurantList__item {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         padding: 1rem;
         text-decoration: none;
         height: 72px;
 
         &--logo {
-          display: inline-block;
           width: 3rem;
           height: 3rem;
           margin-right: 1rem;
