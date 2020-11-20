@@ -4,7 +4,9 @@
     <ul>
       <li v-for="restaurant in restaurants" :key="restaurant.name">
         <NuxtLink class="restaurantList__item" to="/">
-          <img class="restaurantList__item--logo" :src="`${restaurant.logo}`">
+          <div class="restaurantList__item--logo-wrapper">
+            <img class="restaurantList__item--logo" :src="`${restaurant.logo}`">
+          </div>
           <div class="restaurantList__item--content">
             <div class="restaurantList__item--content-title">{{ restaurant.name }}</div>
             <div class="restaurantList__item--content-category">{{ restaurant.category }}</div>
@@ -56,10 +58,18 @@ export default {
         text-decoration: none;
         height: 72px;
 
-        &--logo {
+        &--logo-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 3rem;
-          height: auto;
+          height: 3rem;
           margin-right: 1rem;
+        }
+
+        &--logo {
+          width: 100%;
+          height: auto;
         }
 
         &--content {
