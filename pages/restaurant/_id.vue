@@ -99,11 +99,11 @@ export default {
         display: flex;
         align-items: center;
         margin-bottom: .5rem;
-        gap: 1rem;
         text-decoration: underline;
 
         > a {
           color: #080808;
+          margin-left: 1rem;
         }
       }
 
