@@ -1,9 +1,11 @@
 <template>
   <header class="navbar">
-    <h1 class="navbar__logo">Owensboro Restaurants</h1>
-    <a href="mailto:iamcharlier@gmail.com">
-      <img class="navbar__email" src="~assets/email.svg" alt="email icon">
-    </a>
+    <NuxtLink to="/" exact>
+        <h1 class="navbar__logo">Restaurants</h1>
+    </NuxtLink>
+    <NuxtLink to="/">
+      <img class="navbar__dice" src="~assets/dice.svg" alt="dice icon">
+    </NuxtLink>
   </header>
 </template>
 
@@ -26,15 +28,24 @@ export default {
     background: #1D3557;
     color: #ffffff;
 
+    a {
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        height: 32px;
+      }
+    }
+
     &__logo {
+      color: #ffffff;
       font-size: 20px;
       line-height: 1;
       font-weight: 500;
     }
 
-    &__email {
-      width: 24px;
-      height: 24px;
+    &__dice {
+      width: 32px;
+      height: 32px;
     }
   }
 </style>

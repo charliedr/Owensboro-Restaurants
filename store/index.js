@@ -13,9 +13,14 @@ export const state = () => ({
     {
       name: "Brew Bridge",
       category: "Bar & Grill",
-      website: "https://www.bigotakeout.com/r/1101/restaurants/delivery/Bar-Grill/Brew-Bridge-Owensoro",
+      website: "https://www.OwensboroBrewBridge.com/",
       logo: 'brew_bridge-logo.png',
-      thumbnail: 'brew_bridge-thumbnail.jpg'
+      thumbnail: 'brew_bridge-thumbnail.jpg',
+      description: "Owensboro, KY's First Brewery in over 100 years! Come join us for an awesome tap offering (30+!), food, music, and a great time!",
+      address: '42 Wallaby Way, Sidney',
+      phoneNumber: '555-555-5555',
+      bigOTakeout: 'https://www.bigotakeout.com/r/1101/restaurants/delivery/Bar-Grill/Brew-Bridge-Owensoro',
+      toast: 'https://www.toasttab.com/the-brew-bridge/v3'
     },
     {
       name: "Don Mario",

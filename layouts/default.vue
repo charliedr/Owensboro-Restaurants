@@ -45,4 +45,23 @@ body {
   background-color: $white;
   color: $black;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 1s ease-in-out;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: scale(.98);
+}
+
+.divider {
+  border-bottom: 1px solid $primary-color;
+  opacity: .25;
+  height: 1px;
+  width: 100%;
+  margin: 1rem 0;
+}
 </style>
