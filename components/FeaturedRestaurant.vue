@@ -13,10 +13,9 @@
       </div>
       <div class="featured__card--mid" :style="{ backgroundImage: `url(${featured.thumbnail})` }"></div>
       <div class="featured__card--bot">
-          <a class="featured__card--bot-website" :href="featured.website">Order Online 
+          <!-- <a class="featured__card--bot-website" :href="featured.website">Order Online </a> -->
           <!-- <img class="navbar__email" src="~assets/chevron-right.svg" alt="right arrow icon"> -->
-          </a>
-          <NuxtLink class="featured__card--bot-about" to="/">View Restaurant</NuxtLink>
+          <NuxtLink class="featured__card--bot-about" :to="`/restaurant/${featured.name}`">View Information</NuxtLink>
       </div>
     </div>
   </div>
@@ -100,7 +99,25 @@ export default {
         align-items: flex-start;
         padding: 1rem;
 
-        &-website {
+        // &-website {
+        //   display: flex;
+        //   font-size: 14px;
+        //   font-weight: 500;
+        //   text-align: center;
+        //   text-transform: uppercase;
+        //   text-decoration: none;
+        //   color: #ffffff;
+        //   background: #1D3557;
+        //   padding: 10px 12px;
+        //   border-radius: 8px;
+
+        //   img {
+        //     height: 18px;
+        //     margin-left: 12px;
+        //   }
+        // }
+
+        &-about {
           display: flex;
           font-size: 14px;
           font-weight: 500;
@@ -111,23 +128,6 @@ export default {
           background: #1D3557;
           padding: 10px 12px;
           border-radius: 8px;
-
-          img {
-            height: 18px;
-            margin-left: 12px;
-          }
-        }
-
-        &-about {
-          display: inline-block;
-          font-size: 14px;
-          font-weight: 500;
-          text-align: center;
-          color: #080808;
-          border-radius: 8px;
-          padding: 10px 12px;
-          margin-left: 8px;
-          text-decoration: none;
         }
       }
     }

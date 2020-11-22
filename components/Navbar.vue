@@ -1,7 +1,7 @@
 <template>
   <header class="navbar">
     <NuxtLink to="/" exact>
-        <h1 class="navbar__logo">Restaurants</h1>
+        <h1 class="navbar__logo">Restaurants &amp; Bars</h1>
     </NuxtLink>
     <NuxtLink to="/">
       <img class="navbar__dice" src="~assets/dice.svg" alt="dice icon">
