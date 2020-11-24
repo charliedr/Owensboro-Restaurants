@@ -23,25 +23,36 @@
           <h2>Call Now</h2>
           <span>{{ phoneNumber }}</span>
         </a>
-          <a class="restaurant__button" :href="website">
-            <h2>Visit Website</h2>
-          </a>
+        <a class="restaurant__button" :href="website">
+          <h2>Visit Website</h2>
+        </a>
       </div>
       <div class="divider"></div>
       <h2 class="section__title">Online Ordering</h2>
       <div class="divider"></div>
-      <div class="contact__wrapper" v-if="bigOTakeout">
+      <div class="restaurant__onlineorder--wrapper">
+        <a :href="toastLink">
+          <img :src="`../${toastLogo}`" alt="Toast logo">
+        </a>
+        <a :href="grubhubLink">
+          <img :src="`../${grubhubLogo}`" alt="Grubhub logo">
+        </a>
+        <a :href="bigOTakeoutLink">
+          <img :src="`../${bigOTakeoutLogo}`" alt="Big O Takeout logo">
+        </a>
+      </div>
+      <!-- <div class="contact__wrapper" v-if="bigOTakeout">
         <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="bigOTakeout">Big O Takeout</a>
+        <a class="restauraunt__content--online-order" :href="bigOTakeoutLink">Big O Takeout</a>
       </div>
       <div class="contact__wrapper" v-if="toast">
         <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="toast">Toast</a>
+        <a class="restauraunt__content--online-order" :href="toastLink">Toast</a>
       </div>
       <div class="contact__wrapper" v-if="grubhub">
         <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="grubhub">Grubhub</a>
-      </div>
+        <a class="restauraunt__content--online-order" :href="grubhubLink">Grubhub</a>
+      </div> -->
     </section>
 
     <!-- ------------------------------------- -->
@@ -67,9 +78,12 @@ export default {
       phoneNumber: '',
       website: '',
       options: '',
-      bigOTakeout: '',
-      toast: '',
-      grubhub: ''
+      bigOTakeoutLink: '',
+      bigOTakeoutLogo: '',
+      toastLogo: '',
+      toastLink: '',
+      grubhubLink: '',
+      grubhubLogo: ''
     }
   },
   computed: {
@@ -89,9 +103,12 @@ export default {
     this.phoneNumber = currentRestaurant[0].phoneNumber
     this.website = currentRestaurant[0].website
     this.options = currentRestaurant[0].options
-    this.bigOTakeout = currentRestaurant[0].bigOTakeout
-    this.toast = currentRestaurant[0].toast
-    this.grubhub = currentRestaurant[0].grubhub
+    this.bigOTakeoutLink = currentRestaurant[0].bigOTakeoutLink
+    this.bigOTakeoutLogo = currentRestaurant[0].bigOTakeoutLogo
+    this.toastLink = currentRestaurant[0].toastLink
+    this.toastLogo = currentRestaurant[0].toastLogo
+    this.grubhubLink = currentRestaurant[0].grubhubLink
+    this.grubhubLogo = currentRestaurant[0].grubhubLogo
   },
 }
 </script>
@@ -171,6 +188,24 @@ export default {
       .restaurant__contact--wrapper {
         display: grid;
         grid-template-columns: repeat(2, minmax(50%, 1fr));
+      }
+      
+      .restaurant__onlineorder--wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 1rem;
+
+          img {
+            width: 100%;
+            max-width: 250px;
+          }
+        }
       }
     }
   }
