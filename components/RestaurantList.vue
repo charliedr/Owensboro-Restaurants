@@ -10,7 +10,7 @@
             <div class="restaurantList__item--content-category">{{ restaurant.category }}</div>
           </div>
           <img class="chevron-right" src="~assets/chevron-right.svg" alt="right arrow icon">
-        </NuxtLInk>
+        </NuxtLink>
       </li>
     </ul>
   </div>
@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
   .restaurantList {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   
     &__title {
       font-size: 1rem;
@@ -80,6 +80,12 @@ export default {
           height: 2rem; 
         }
       }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .restaurantList__title {
+      font-size: 1.5rem;
     }
   }
 </style>

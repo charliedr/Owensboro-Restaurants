@@ -1,11 +1,15 @@
 <template>
   <div>
     <section class="hero">
-      <span class="hero__hashtag">#ShopLocal</span>
-      <h1 class="hero__title">Find <b>local restaurants</b> in Owensboro, KY</h1>
+      <div class="hero__wrapper container">
+        <span class="hero__wrapper--hashtag">#ShopLocal</span>
+        <h1 class="hero__wrapper--title">Find <b>local restaurants</b> in Owensboro, KY</h1>
+      </div>
     </section>
-    <FeaturedRestaurant />
-    <RestaurantList />
+    <div class="content container">
+      <FeaturedRestaurant class="content__featured" />
+      <RestaurantList class="content__list" />
+    </div>
   </div>
 </template>
 
@@ -39,17 +43,50 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  padding: 4rem 1rem;
+  padding: 4rem 0;
 
-  &__hashtag {
-    font-size: 14px;
-    font-weight: 700;
-  }
+  &__wrapper {
+    padding: 1rem;
+  
+    
+    &--hashtag {
+      font-size: 14px;
+      font-weight: 700;
+    }
 
-  &__title {
-    font-size: 1.8rem;
-    font-weight: 500;
-    max-width: 20ch;
+    &--title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      max-width: 20ch;
+    }
   }
+}
+
+
+@media (min-width: 769px) {
+.hero {
+  padding: 6rem 0;
+
+  &__wrapper {
+    &--hashtag {
+      font-size: 1.5rem;
+    }
+
+    &--title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__featured, &__list {
+    width: 50%;
+    align-self: flex-start;
+  }
+}
 }
 </style>

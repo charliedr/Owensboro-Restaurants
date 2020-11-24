@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="restaurant__hero" :style="{ backgroundImage: `url(../${thumbnail})` }"></section>
-    <section class="restaurant__content">
+    <section class="restaurant__content container">
       <div class="restaurant__content--logo-wrapper">
         <img class="restaurant__content--logo" :src="`../${logo}`" alt="">
       </div>
@@ -30,14 +30,17 @@
       <div class="divider"></div>
       <h2 class="section__title">Online Ordering</h2>
       <div class="divider"></div>
-      <div class="restaurant__onlineorder--wrapper">
+      <div class="restaurant__onlineorder--wrapper" >
         <a :href="toastLink">
-          <img :src="`../${toastLogo}`" alt="Toast logo">
+          <img :src="`../${toastLogo}`" alt="Toast logo" v-if="toastLink">
         </a>
-        <a :href="grubhubLink">
+        <a :href="grubhubLink" v-if="grubhubLink">
           <img :src="`../${grubhubLogo}`" alt="Grubhub logo">
         </a>
-        <a :href="bigOTakeoutLink">
+        <a :href="doordashLink" v-if="doordashLink">
+          <img :src="`../${doordashLogo}`" alt="Doordash logo">
+        </a>
+        <a :href="bigOTakeoutLink" v-if="bigOTakeoutLink">
           <img :src="`../${bigOTakeoutLogo}`" alt="Big O Takeout logo">
         </a>
       </div>
@@ -82,6 +85,8 @@ export default {
       bigOTakeoutLogo: '',
       toastLogo: '',
       toastLink: '',
+      doordashLogo: '',
+      doordashLink: '',
       grubhubLink: '',
       grubhubLogo: ''
     }
@@ -107,6 +112,8 @@ export default {
     this.bigOTakeoutLogo = currentRestaurant[0].bigOTakeoutLogo
     this.toastLink = currentRestaurant[0].toastLink
     this.toastLogo = currentRestaurant[0].toastLogo
+    this.doordashLink = currentRestaurant[0].doordashLink
+    this.doordashLogo = currentRestaurant[0].doordashLogo
     this.grubhubLink = currentRestaurant[0].grubhubLink
     this.grubhubLogo = currentRestaurant[0].grubhubLogo
   },
@@ -188,6 +195,13 @@ export default {
       .restaurant__contact--wrapper {
         display: grid;
         grid-template-columns: repeat(2, minmax(50%, 1fr));
+
+        .restaurant__button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
       }
       
       .restaurant__onlineorder--wrapper {
@@ -203,9 +217,31 @@ export default {
 
           img {
             width: 100%;
-            max-width: 250px;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .section__title {
+      font-size: 1.25rem;
+    }
+
+    .restaurant__contact--wrapper, .restaurant__onlineorder--wrapper {
+      grid-template-columns: repeat(3, 1fr) !important;
+      padding: 2rem 0;
+    }
+
+    .restaurant__contact--wrapper {
+      .restaurant__button {
+        margin-bottom: 0;
+      }
+    }
+
+    .restaurant__onlineorder--wrapper {
+      img {
+        max-width: 150px !important;
       }
     }
   }

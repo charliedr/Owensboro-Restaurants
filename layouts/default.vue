@@ -57,6 +57,12 @@ body {
   transform: scale(.98);
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .divider {
   border-bottom: 1px solid $primary-color;
   opacity: .25;

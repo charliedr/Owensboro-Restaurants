@@ -132,4 +132,10 @@ export default {
       }
     }
   }
+
+  @media (min-width: 769px) {
+    .featured__title {
+      font-size: 1.5rem;
+    }
+  }
 </style>
