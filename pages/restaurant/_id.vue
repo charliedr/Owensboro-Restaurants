@@ -2,9 +2,11 @@
   <div>
     <section class="restaurant__hero" :style="{ backgroundImage: `url(../${thumbnail})` }"></section>
     <section class="restaurant__content container">
+      <!-- Logo -->
       <div class="restaurant__content--logo-wrapper">
         <img class="restaurant__content--logo" :src="`../${logo}`" alt="">
       </div>
+      <!-- Name + Description -->
       <h1 class="restaurant__content--name">{{ name }}</h1>
       <span class="restaurant__content--category">{{ category }}</span>
       <div class="divider"></div>
@@ -12,6 +14,7 @@
       <div class="divider"></div>
       <p class="restaurant__content--description">{{ description }}</p>
       <div class="divider"></div>
+      <!-- Contact Information -->
         <h2 class="section__title">Contact Information</h2>
       <div class="divider"></div>
       <div class="restaurant__contact--wrapper">
@@ -23,16 +26,18 @@
           <h2>Call Now</h2>
           <span>{{ phoneNumber }}</span>
         </a>
-        <a class="restaurant__button" :href="website">
+        <a class="restaurant__button" :href="website" v-if="website">
           <h2>Visit Website</h2>
         </a>
       </div>
       <div class="divider"></div>
+      <!-- Online Ordering -->
       <h2 class="section__title">Online Ordering</h2>
       <div class="divider"></div>
+      <p  v-if="!doordashLink && !toastLink && !grubhubLink && !bigOTakeoutLink">Not currently available.</p>
       <div class="restaurant__onlineorder--wrapper" >
-        <a :href="toastLink">
-          <img :src="`../${toastLogo}`" alt="Toast logo" v-if="toastLink">
+        <a :href="toastLink" v-if="toastLink">
+          <img :src="`../${toastLogo}`" alt="Toast logo">
         </a>
         <a :href="grubhubLink" v-if="grubhubLink">
           <img :src="`../${grubhubLogo}`" alt="Grubhub logo">
@@ -44,23 +49,7 @@
           <img :src="`../${bigOTakeoutLogo}`" alt="Big O Takeout logo">
         </a>
       </div>
-      <!-- <div class="contact__wrapper" v-if="bigOTakeout">
-        <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="bigOTakeoutLink">Big O Takeout</a>
-      </div>
-      <div class="contact__wrapper" v-if="toast">
-        <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="toastLink">Toast</a>
-      </div>
-      <div class="contact__wrapper" v-if="grubhub">
-        <img class="restauraunt__content--icon" src="~assets/cart.svg" alt="shopping cart icon" style="height: 32px; width: 32px;">
-        <a class="restauraunt__content--online-order" :href="grubhubLink">Grubhub</a>
-      </div> -->
     </section>
-
-    <!-- ------------------------------------- -->
-    <!-- <a :href="`${bigOTakeout}`">Big O Takeout</a>
-    <a :href="`${toast}`">Toast</a> -->
   </div>
 </template>
 
@@ -70,7 +59,9 @@ import {mapState} from 'vuex'
 export default {
   data() {
     return {
+      // The slug is based on the name of the current restaurant
       slug: this.$route.params,
+      // I had to declare these beforehand so that they could be referenced in mounted()
       name: '',
       logo: '',
       thumbnail: '',
@@ -97,7 +88,10 @@ export default {
     })
   },
   mounted() {
+    // Grab restaurant information based on the current slug
     const currentRestaurant = this.restaurants.filter(restaurant => restaurant.name === this.slug.id)
+    // Set data points based on the information that was pulled above in currentRestaurant
+    // [0] is used to reference the first object (restaurant) as it is unnamed when filtered like this
     this.name = currentRestaurant[0].name
     this.logo = currentRestaurant[0].logo
     this.thumbnail = currentRestaurant[0].thumbnail
@@ -181,6 +175,7 @@ export default {
       &--logo {
         background: #ffffff;
         width: auto;
+        max-width: 80%;
         height: 160px;;
         padding: 1rem;
         border-radius: 1rem;
@@ -206,7 +201,7 @@ export default {
       
       .restaurant__onlineorder--wrapper {
         display: grid;
-        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        grid-template-columns: repeat(3, 1fr);
 
         a {
           display: flex;
@@ -217,6 +212,7 @@ export default {
 
           img {
             width: 100%;
+            max-width: 150px;
           }
         }
       }

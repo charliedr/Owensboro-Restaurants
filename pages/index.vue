@@ -21,7 +21,7 @@ import {mapState} from 'vuex'
 export default {
   components: {
     FeaturedRestaurant,
-    RestaurantList
+    RestaurantList,
   },
   computed: {
     ...mapState({

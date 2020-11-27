@@ -26,7 +26,7 @@ import {mapState} from 'vuex'
 
 export default {
   computed: {
-    // Pull information from the store
+    // Pull information from the store and set it as the featured object
     ...mapState({
       featured: state => state.featured
     })
@@ -98,24 +98,6 @@ export default {
         flex-direction: row;
         align-items: flex-start;
         padding: 1rem;
-
-        // &-website {
-        //   display: flex;
-        //   font-size: 14px;
-        //   font-weight: 500;
-        //   text-align: center;
-        //   text-transform: uppercase;
-        //   text-decoration: none;
-        //   color: #ffffff;
-        //   background: #1D3557;
-        //   padding: 10px 12px;
-        //   border-radius: 8px;
-
-        //   img {
-        //     height: 18px;
-        //     margin-left: 12px;
-        //   }
-        // }
 
         &-about {
           display: flex;

@@ -2,9 +2,9 @@
   <header class="navbar">
     <div class="navbar__wrapper container">
       <NuxtLink to="/" exact>
-          <h1 class="navbar__wrapper--logo">Restaurants &amp; Bars</h1>
+          <img class="navbar__wrapper--logo" src="~assets/eat_local_obky-logo.png" />
       </NuxtLink>
-      <NuxtLink to="/">
+      <NuxtLink to="/restaurant-randomizer">
         <img class="navbar__wrapper--dice" src="~assets/dice.svg" alt="dice icon">
       </NuxtLink>
     </div>
@@ -34,6 +34,9 @@ export default {
       padding: 1rem;  
 
       a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
 
         &:nth-of-type(2) {
@@ -42,10 +45,11 @@ export default {
       }
 
       &--logo {
-        color: #ffffff;
-        font-size: 20px;
-        line-height: 1;
-        font-weight: 500;
+        // color: #ffffff;
+        // font-size: 20px;
+        // line-height: 1;
+        // font-weight: 500;
+        height: 2rem;
       }
 
       &--dice {
