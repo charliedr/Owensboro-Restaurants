@@ -182,7 +182,20 @@ export const state = () => ({
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
-      name: "Mendy's Kitchen"
+      name: "Mendy's Kitchen",
+      category: "Diner",
+      website: "https://mendyskitchen.me/",
+      logo: 'mendys_kitchen-logo.jpg',
+      thumbnail: 'mendys_kitchen-thumbnail.jpg',
+      description: '',
+      address: '924 Crabtree Avenue',
+      googleMaps: "https://www.google.com/maps/dir//mendy's+kitchen/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fba050658ee0d:0x1ddff3dbbf2b1c06?sa=X&ved=2ahUKEwjv-dKA5qPtAhVJiFkKHW0ZBW0Q9RcwC3oECBIQBQ",
+      phoneNumber: '270-685-0835',
+      options: 'Curbside Pickup, Online Ordering',
+      grubhubLink: 'https://www.grubhub.com/restaurant/mendys-kitchen-924-crabtree-ave-owensboro/1095913',
+      grubhubLogo: 'grubhub-logo.png',
+      bigOTakeoutLink: 'https://www.bigotakeout.com/r/382/restaurants/delivery/Diner/Mendys-Kitchen-Owensboro',
+      bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
       name: "Mi Ranchito"
