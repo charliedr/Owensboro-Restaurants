@@ -9,6 +9,7 @@
       <div class="random__bottom">
         <img class="random__logo" :src="`${chosenRestaurant.logo}`" v-if="chosenRestaurant.logo" alt="Restaurant logo">
         <span class="random__chosen" v-if="chosenRestaurant">{{ chosenRestaurant.name }}</span>
+        <span class="random__chosen--category" v-if="chosenRestaurant">{{ chosenRestaurant.category }}</span>
         <NuxtLink class="random__link" :to="`/restaurant/${chosenRestaurant.name}`" v-if="chosenRestaurant.name">visit page</NuxtLink>
         <!-- <ul class="random__list">
           <div class="random__list--wrapper">
@@ -124,6 +125,12 @@ export default {
       display: block;
       font-size: 1.5rem;
       font-weight: 700;
+
+      &--category {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+      }
     }
 
     &__link {

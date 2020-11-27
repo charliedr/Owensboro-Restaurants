@@ -11,8 +11,8 @@
       <span class="restaurant__content--category">{{ category }}</span>
       <div class="divider"></div>
       <p class="restaurant__content--options">{{ options }}</p>
-      <div class="divider"></div>
-      <p class="restaurant__content--description">{{ description }}</p>
+      <div class="divider" v-if="description"></div>
+      <p class="restaurant__content--description" v-if="description">{{ description }}</p>
       <div class="divider"></div>
       <!-- Contact Information -->
         <h2 class="section__title">Contact Information</h2>
@@ -34,7 +34,7 @@
       <!-- Online Ordering -->
       <h2 class="section__title">Online Ordering</h2>
       <div class="divider"></div>
-      <p  v-if="!doordashLink && !toastLink && !grubhubLink && !bigOTakeoutLink">Not currently available.</p>
+      <p  v-if="!doordashLink && !toastLink && !grubhubLink && !bigOTakeoutLink"><i>Not currently available.</i></p>
       <div class="restaurant__onlineorder--wrapper" >
         <a :href="toastLink" v-if="toastLink">
           <img :src="`../${toastLogo}`" alt="Toast logo">

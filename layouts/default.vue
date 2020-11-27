@@ -16,11 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-$white: #ffffff;
-$gray: #EFEFEF;
-$black: #080808;
-$primary-color: #1D3557;
-
 html {
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -42,8 +37,8 @@ html {
 }
 
 body {
-  background-color: $white;
-  color: $black;
+  background-color: #ffffff;;
+  color: #080808;
 }
 
 .page-enter-active,
@@ -64,7 +59,7 @@ body {
 }
 
 .divider {
-  border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid #1D3557;
   opacity: .25;
   height: 1px;
   width: 100%;
