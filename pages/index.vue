@@ -48,7 +48,6 @@ export default {
   &__wrapper {
     padding: 1rem;
   
-    
     &--hashtag {
       font-size: 14px;
       font-weight: 700;
