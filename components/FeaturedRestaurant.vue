@@ -116,6 +116,10 @@ export default {
   }
 
   @media (min-width: 769px) {
+    .featured {
+      position: sticky;
+      top: -1px;
+    }
     .featured__title {
       font-size: 1.5rem;
     }
