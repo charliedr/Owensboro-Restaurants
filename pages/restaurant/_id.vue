@@ -2,10 +2,12 @@
   <div>
     <section class="restaurant__hero" :style="{ backgroundImage: `url(../${thumbnail})` }"></section>
     <section class="restaurant__content container">
+
       <!-- Logo -->
       <div class="restaurant__content--logo-wrapper">
         <img class="restaurant__content--logo" :src="`../${logo}`" alt="">
       </div>
+
       <!-- Name + Description -->
       <h1 class="restaurant__content--name">{{ name }}</h1>
       <span class="restaurant__content--category">{{ category }}</span>
@@ -14,6 +16,7 @@
       <div class="divider" v-if="description"></div>
       <p class="restaurant__content--description" v-if="description">{{ description }}</p>
       <div class="divider"></div>
+
       <!-- Contact Information -->
         <h2 class="section__title">Contact Information</h2>
       <div class="divider"></div>
@@ -31,6 +34,7 @@
         </a>
       </div>
       <div class="divider"></div>
+      
       <!-- Online Ordering -->
       <h2 class="section__title">Online Ordering</h2>
       <div class="divider"></div>

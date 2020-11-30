@@ -53,11 +53,12 @@ export default {
         gap: 1rem;
         padding: 1rem;
         text-decoration: none;
-        height: 72px;
+        height: 80px;
 
         &--logo {
           max-width: 3rem;
-          max-height: 3rem;;
+          max-height: 3rem;
+          align-self: center;
         }
 
         &--content {
