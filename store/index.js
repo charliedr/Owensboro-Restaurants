@@ -377,7 +377,7 @@ export const state = () => ({
       name: "Thai Food Owensboro",
       category: "Thai Restaurant",
       website: "https://thaifoodowensboro.com/",
-      logo: 'thai_food_owensboro-logo.png',
+      logo: 'thai_food_owensboro-logo.jpg',
       thumbnail: 'thai_food_owensboro-thumbnail.jpg',
       description: "With 13 years of experience cooking in the finest restaurants, our chef is excited to present their vision to you and all our guests. Our caring and committed staff will ensure you have a fantastic experience with us.",
       address: '1401 Carter Road',
