@@ -19,6 +19,8 @@ export default {
   head() {
     return {
       meta: [
+        { hid: 'og:url', property: 'og:url', content: 'https://eatlocalobky.com' },
+        { hid: 'og:type', content: 'website' },
         { hid: 'og:title', property: 'og:title', content: 'Eat Local OBKY' },
         { hid: 'og:description', property: 'og:description', content: 'A directory for locally owned restaurants in the Owensboro, KY area.' },
         { hid: 'og:image', property: 'og:image', content: 'ogImage.jpg' }
