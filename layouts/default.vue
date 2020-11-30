@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ogImage from '~/assets/ogImage.png'
+import ogImage from '~/assets/ogImage.jpg'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 
