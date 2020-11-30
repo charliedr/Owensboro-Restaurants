@@ -28,7 +28,6 @@ export default {
       justify-content: center;
 
       a {
-        // margin: 0 .5rem;
         color: #70D34A;
         text-decoration: none;
 

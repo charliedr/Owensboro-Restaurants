@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import ogImage from '~/assets/ogImage.png'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 
@@ -14,6 +15,13 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'og:image', property: 'og:image', content: this.BASE_URL+ ogImage }
+      ]
+    }
   }
 }
 </script>

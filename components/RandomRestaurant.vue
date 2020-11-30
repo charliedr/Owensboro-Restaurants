@@ -11,12 +11,6 @@
         <span class="random__chosen" v-if="chosenRestaurant">{{ chosenRestaurant.name }}</span>
         <span class="random__chosen--category" v-if="chosenRestaurant">{{ chosenRestaurant.category }}</span>
         <NuxtLink class="random__link" :to="`/restaurant/${chosenRestaurant.name}`" v-if="chosenRestaurant.name">visit page</NuxtLink>
-        <!-- <ul class="random__list">
-          <div class="random__list--wrapper">
-            <li class="random__list--item" v-for="restaurant in restaurantNames" :key="restaurant">{{ restaurant }}</li>
-          </div>
-        </ul> -->
-        <!-- <button class="random__button" id="randomizeButtonAgain" @click="randomizeAgain">roll again</button> -->
       </div>
     </section>
   </div>
