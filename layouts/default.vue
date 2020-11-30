@@ -6,8 +6,8 @@
   </div>
 </template>
 
-<script>
-import ogImage from '~/assets/ogImage.jpg'
+// <script>
+// import ogImage from '~/assets/ogImage.jpg'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 
@@ -19,7 +19,9 @@ export default {
   head() {
     return {
       meta: [
-        { hid: 'og:image', property: 'og:image', content: this.BASE_URL+ ogImage }
+        { hid: 'og:title', property: 'og:title', content: 'Eat Local OBKY' },
+        { hid: 'og:description', property: 'og:description', content: 'A directory for locally owned restaurants in the Owensboro, KY area.' },
+        { hid: 'og:image', property: 'og:image', content: '~/assets/ogImage.jpg' }
       ]
     }
   }
