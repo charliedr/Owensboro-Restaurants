@@ -4,7 +4,7 @@ export const state = () => ({
     {
       name: "Brew Bridge",
       category: "Bar & Grill",
-      website: "https://www.bigotakeout.com/r/1101/restaurants/delivery/Bar-Grill/Brew-Bridge-Owensoro",
+      website: "https://www.OwensboroBrewBridge.com/",
       logo: 'brew_bridge-logo.png',
       thumbnail: 'brew_bridge-thumbnail.jpg'
     },
