@@ -32,21 +32,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // '@nuxtjs/google-analytics',
     "@nuxtjs/svg"
   ],
-  // googleAnalytics: {
-  //   id: 'G-55QZ1FBRVT'
-  // }
-  // ,
-  // googleAnalytics: {
-  //   id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
-  // },
-  // publicRuntimeConfig: {
-  //   googleAnalytics: {
-  //     id: process.env.GOOGLE_ANALYTICS_ID
-  //   }
-  // },
   /*
   ** Nuxt.js modules
   */

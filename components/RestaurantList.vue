@@ -54,6 +54,7 @@ export default {
         padding: 1rem;
         text-decoration: none;
         height: 80px;
+        border-bottom: 1px solid rgba(8, 8, 8, 0.05);
 
         &--logo {
           max-width: 3rem;
@@ -77,8 +78,9 @@ export default {
         }
 
         .chevron-right {
+          align-self: center;
           margin-left: auto;
-          height: 2rem; 
+          height: 2rem;
         }
       }
     }

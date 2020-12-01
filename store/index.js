@@ -125,7 +125,7 @@ export const state = () => ({
     },
     {
       name: "Don Mario's",
-      category: "Mexican",
+      category: "Mexican Restaurant",
       website: "https://www.donmariomex.com/",
       logo: 'don_mario-logo.png',
       thumbnail: 'don_mario-thumbnail.jpg',

@@ -18,7 +18,7 @@
       <div class="divider"></div>
 
       <!-- Contact Information -->
-        <h2 class="section__title">Contact Information</h2>
+      <h2 class="section__title">Contact Information</h2>
       <div class="divider"></div>
       <div class="restaurant__contact--wrapper">
         <a class="restaurant__button" :href="googleMaps">
