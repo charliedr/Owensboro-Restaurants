@@ -1,6 +1,10 @@
 <template>
   <footer class="footer">
-    <div class="footer__wrapper container">
+    <div class="footer__wrapper--top">
+      <h3>Want to submit a restaurant?</h3>
+      <p>Send an email to <a href="mailto:support@oddballcreative.agency">support@oddballcreative.agency</a></p>
+    </div>
+    <div class="footer__wrapper--bottom">
       <span>Built by <a href="https://oddballcreative.agency">Oddball Creative</a> &#128526;</span>
       <a class="privacy-policy" href="https://www.freeprivacypolicy.com/privacy/view/4e77b1ab058348f231fcebf867dc8ad3">Privacy Policy</a>
     </div>
@@ -16,16 +20,39 @@ export default {
 <style lang="scss">
   .footer {
     display: block;
-    padding: 1rem;
     margin-top: 1.5rem;
-    background: #1D3557;
     color: #ffffff;
 
-    &__wrapper {
+    &__wrapper--top {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      background: rgba(29, 53, 87, 0.85);
+      padding: 2.5rem 0;
+
+      p {
+        margin-top: .5rem;
+      }
+
+      a {
+        color: #70D34A;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }  
+    }
+
+    &__wrapper--bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #1D3557;
+      padding: .5rem 0;
 
       a {
         color: #70D34A;
