@@ -82,7 +82,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "city calk",
+      name: "city walk",
       category: "American Restaurant",
       website: "https://www.citywalkofowensboro.com/",
       logo: 'city_walk_of_owensboro-logo.jpg',
