@@ -2,7 +2,7 @@
   <div>
     <section class="hero">
       <div class="hero__wrapper container">
-        <span class="hero__wrapper--hashtag">#ShopLocal</span>
+        <span class="hero__wrapper--hashtag">#EatLocal</span>
         <h1 class="hero__wrapper--title">Find <b>local restaurants</b> in Owensboro, KY</h1>
       </div>
     </section>
