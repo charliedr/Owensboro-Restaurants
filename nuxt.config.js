@@ -28,9 +28,6 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [],
-  router: {
-    trailingSlash: false
-  },
   /*
   ** Nuxt.js dev-modules
   */
