@@ -83,7 +83,7 @@ export default {
       doordashLogo: '',
       doordashLink: '',
       grubhubLink: '',
-      grubhubLogo: ''
+      grubhubLogo: '',
     }
   },
   computed: {
@@ -114,6 +114,13 @@ export default {
     this.doordashLogo = currentRestaurant[0].doordashLogo
     this.grubhubLink = currentRestaurant[0].grubhubLink
     this.grubhubLogo = currentRestaurant[0].grubhubLogo
+
+    console.log(this.$route.params.id)
+
+    // // Capitalize the name of the restaurant
+    // const nameLowerCase = this.name
+    // const nameUpperCase = nameLowerCase.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+    // this.name = nameUpperCase
   },
 }
 </script>
@@ -189,6 +196,7 @@ export default {
       &--name {
         font-size: 1.8rem;
         font-weight: 500;
+        text-transform: capitalize;
       }
 
       .restaurant__contact--wrapper {

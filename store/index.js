@@ -2,21 +2,17 @@ export const state = () => ({
   // FEATURED RESTAURANT
   featured: 
     {
-      name: "Brew Bridge",
+      name: "brew bridge",
       category: "Bar & Grill",
       website: "https://www.OwensboroBrewBridge.com/",
       logo: 'brew_bridge-logo.png',
       thumbnail: 'brew_bridge-thumbnail.jpg'
     },
-  // RESTAURANT NAMES
-  // Need to eventually create a mutation/getter to automatically append new restaurants
-  restaurantNames: [
-   "Big Dipper","Bill's Restaurant","Brew Bridge","Briarpatch","Carnival Cafe","City Walk of Owensboro","Colby's","Dee's Diner","Don Mario","Fetta Specialty Pizza","Gary's Drive In","Hong Kong","The Lure","Mendy's Kitchen","Mi Ranchito","The Miller House","Moonlite Bar-B-Q","Niko's Bakery & Cafe","Niko's Italian Cuisine","Owensboro Karen","Pan Asian","Papa Grande's","PeezO's Pizza","Real Hacienda","Ritzy's","Thai Food Owensboro"
-  ],
   // ALL RESTAURANTS
+  // Names *HAVE* to be lowercase in order to not break routes
   restaurants: [
     {
-      name: "Big Dipper",
+      name: "big dipper",
       category: "Fast Food",
       website: "",
       logo: 'big_dipper-logo.jpg',
@@ -28,7 +24,7 @@ export const state = () => ({
       options: 'Drive-through, Carry-Out'
     },
     {
-      name: "Bill's Restaurant",
+      name: "bill's Restaurant",
       category: "Fine Dining",
       website: "http://www.atbills.com/",
       logo: 'bills_restaurant-logo.jpg',
@@ -40,7 +36,7 @@ export const state = () => ({
       options: 'Carry-Out'
     },
     {
-      name: "Brew Bridge",
+      name: "brew bridge",
       category: "Bar & Grill",
       website: "https://www.OwensboroBrewBridge.com/",
       logo: 'brew_bridge-logo.png',
@@ -58,7 +54,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "Briarpatch",
+      name: "briarpatch",
       category: "Steak House",
       website: "http://www.brpatch.com/",
       logo: 'briarpatch-logo.png',
@@ -70,7 +66,7 @@ export const state = () => ({
       options: 'Carry-Out'
     },
     {
-      name: "Carnival Cafe",
+      name: "carnival cafe",
       category: "Restaurant",
       website: "",
       logo: 'carnival_cafe-logo.jpg',
@@ -86,7 +82,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "City Walk",
+      name: "city calk",
       category: "American Restaurant",
       website: "https://www.citywalkofowensboro.com/",
       logo: 'city_walk_of_owensboro-logo.jpg',
@@ -100,7 +96,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "Colby's",
+      name: "colby's",
       category: "American Restaurant",
       website: "http://www.colbysfinefoodandspirits.com/",
       logo: 'colbys-logo.jpg',
@@ -112,7 +108,7 @@ export const state = () => ({
       options: 'Curbside Pickup, Online Ordering'
     },
     {
-      name: "Dee's Diner",
+      name: "dee's diner",
       category: 'Diner',
       website: "",
       logo: 'dees_diner-logo.jpg',
@@ -124,7 +120,7 @@ export const state = () => ({
       options: 'Carry-Out, Delivery'
     },
     {
-      name: "Don Mario's",
+      name: "don mario's",
       category: "Mexican Restaurant",
       website: "https://www.donmariomex.com/",
       logo: 'don_mario-logo.png',
@@ -140,7 +136,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "Fetta Specialty Pizza",
+      name: "fetta specialty pizza",
       category: "Pizza",
       website: "http://www.fettaspecialtypizza.com/home.html",
       logo: 'fetta_specialty_pizza-logo.jpg',
@@ -154,7 +150,7 @@ export const state = () => ({
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
-      name: "Gary's Drive In",
+      name: "gary's drive in",
       category: "Hamburger Restaurant",
       website: "http://garys-drive-in.edan.io/",
       logo: 'garys_drive_in-logo.jpg',
@@ -168,7 +164,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "Lure Seafood & Grille",
+      name: "lure seafood & grille",
       category: "Seafood Restaurant",
       website: "https://www.lureowensboro.com/",
       logo: 'lure_seafood_and_grille-logo.jpg',
@@ -182,7 +178,7 @@ export const state = () => ({
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
-      name: "Mendy's Kitchen",
+      name: "mendy's kitchen",
       category: "Diner",
       website: "https://mendyskitchen.me/",
       logo: 'mendys_kitchen-logo.jpg',
@@ -198,7 +194,7 @@ export const state = () => ({
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
-      name: "Mi Ranchito",
+      name: "mi ranchito",
       category: "Mexican Restaurant",
       website: "https://miranchito.restaurant/",
       logo: 'mi_ranchito-logo.jpg',
@@ -212,7 +208,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "The Miller House",
+      name: "the miller house",
       category: "American Restaurant",
       website: "http://www.themillerhouserestaurant.com/",
       logo: 'the_miller_house-logo.png',
@@ -226,7 +222,7 @@ export const state = () => ({
       toastLogo: 'toast-logo.png'
     },
     {
-      name: "Moonlite Bar-B-Q",
+      name: "moonlite bar-b-q",
       category: "Barbecue Restaurant",
       website: "https://www.moonlite.com/",
       logo: 'moonlite_bbq-logo.jpg',
@@ -238,7 +234,7 @@ export const state = () => ({
       options: 'Curbside Pickup'
     },
     {
-      name: "Niko's Bakery & Cafe",
+      name: "niko's bakery & cafe",
       category: "Bakery & Cafe",
       website: "https://www.nikosbakeryandcafe.com/",
       logo: 'nikos_bakery_and_cafe-logo.png',
@@ -254,7 +250,7 @@ export const state = () => ({
       doordashLogo: 'doordash-logo.png'
     },
     {
-      name: "Niko's Italian Cuisine",
+      name: "niko's italian cuisine",
       category: "Italian Restaurant",
       website: "http://www.nikositalianonline.com/",
       logo: 'nikos_italian_cuisine-logo.jpg',
@@ -268,7 +264,7 @@ export const state = () => ({
       doordashLogo: 'doordash-logo.png'
     },
     {
-      name: "Old Hickory Bar-B-Q",
+      name: "old hickory bar-b-q",
       category: "Barbecue Restaurant",
       website: "https://www.oldhickorybar-b-q.com/",
       logo: 'old_hickory_bbq-logo.png',
@@ -284,7 +280,7 @@ export const state = () => ({
       doordashLogo: 'doordash-logo.png'
     },
     {
-      name: "Owensboro Karen",
+      name: "owensboro karen",
       category: "Asian Restaurant",
       website: "",
       logo: 'owensboro_karen-logo.jpg',
@@ -298,7 +294,7 @@ export const state = () => ({
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
     {
-      name: "Pan Asian",
+      name: "pan asian",
       category: "Asian Restaurant",
       website: "https://www.panasianowensboro.com/",
       logo: 'pan_asian-logo.png',
@@ -316,7 +312,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "Papa Grande's 54",
+      name: "papa grande's 54",
       category: "Mexican Restaurant",
       website: "https://www.papagrande54.com/",
       logo: 'papa_grande-logo.png',
@@ -332,7 +328,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
-      name: "PeezO's Pizza",
+      name: "peezo's pizza",
       category: "Pizza Restaurant",
       website: "http://peezos-pizza.jany.io/",
       logo: 'peezos_pizza-logo.jpg',
@@ -344,7 +340,7 @@ export const state = () => ({
       options: 'Carry-Out'
     },
     {
-      name: "Real Hacienda",
+      name: "real hacienda",
       category: "Mexican Restaurant",
       website: "https://www.therealhacienda.com/",
       logo: 'real_hacienda-logo.jpg',
@@ -362,7 +358,7 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png',
     },
     {
-      name: "Ritzy's 54",
+      name: "ritzy's 54",
       category: "Hamburger Restaurant",
       website: "http://www.ritzysofowensboro.com/",
       logo: 'ritzys-logo.png',
@@ -374,7 +370,7 @@ export const state = () => ({
       options: 'Drive-Through, Online Ordering',
     },
     {
-      name: "Thai Food Owensboro",
+      name: "thai food owensboro",
       category: "Thai Restaurant",
       website: "https://thaifoodowensboro.com/",
       logo: 'thai_food_owensboro-logo.jpg',
@@ -390,4 +386,5 @@ export const state = () => ({
       toastLogo: 'toast-logo.png',
     },
   ]
-})
+}
+)

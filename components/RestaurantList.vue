@@ -68,6 +68,7 @@ export default {
             font-size: 17px;
             font-weight: 700;
             color: #080808;
+            text-transform: capitalize;
           }
 
           &-category {
