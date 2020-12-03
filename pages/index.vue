@@ -16,17 +16,11 @@
 <script>
 import FeaturedRestaurant from '~/components/FeaturedRestaurant'
 import RestaurantList from '~/components/RestaurantList'
-import {mapState} from 'vuex'
 
 export default {
   components: {
     FeaturedRestaurant,
     RestaurantList,
-  },
-  computed: {
-    ...mapState({
-      restaurants: state => state.restaurants
-    })
   }
 }
 </script>
