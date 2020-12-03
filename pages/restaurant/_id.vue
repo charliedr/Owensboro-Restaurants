@@ -89,7 +89,7 @@ export default {
   computed: {
     ...mapState({
       restaurants: state => state.restaurants
-    })
+    }),
   },
   mounted() {
     // Grab restaurant information based on the current slug
@@ -116,11 +116,6 @@ export default {
     this.grubhubLogo = currentRestaurant[0].grubhubLogo
 
     console.log(this.$route.params.id)
-
-    // // Capitalize the name of the restaurant
-    // const nameLowerCase = this.name
-    // const nameUpperCase = nameLowerCase.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-    // this.name = nameUpperCase
   },
 }
 </script>
