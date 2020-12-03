@@ -64,7 +64,7 @@ body {
 .page-enter,
 .page-leave-active {
   opacity: 0;
-  // transform: scale(.98);
+  transform: scale(.98);
 }
 
 .container {
