@@ -23,7 +23,7 @@ export default {
         { hid: 'og:type', content: 'website' },
         { hid: 'og:title', property: 'og:title', content: 'Eat Local OBKY' },
         { hid: 'og:description', property: 'og:description', content: 'A directory for locally owned restaurants in the Owensboro, KY area.' },
-        { hid: 'og:image', property: 'og:image', content: 'https://irp-cdn.multiscreensite.com/a661854b/dms3rep/multi/ogImage.jpg' }
+        // { hid: 'og:image', property: 'og:image', content: 'https://irp-cdn.multiscreensite.com/a661854b/dms3rep/multi/ogImage.jpg' }
       ]
     }
   }
