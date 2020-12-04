@@ -119,6 +119,7 @@ export default {
       display: block;
       font-size: 1.5rem;
       font-weight: 700;
+      text-transform: capitalize;
 
       &--category {
         display: block;

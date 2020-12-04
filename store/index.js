@@ -136,6 +136,20 @@ export const state = () => ({
       grubhubLogo: 'grubhub-logo.png'
     },
     {
+      name: "el toribio",
+      category: "Mexican Restaurant",
+      website: "",
+      logo: "el_toribio-logo.jpg",
+      thumbnail: "el_toribio-thumbnail.jpg",
+      description: "A first locally owned Mexican Restaurant in Owensboro since 1985. Come join the fiesta to know the regular specials as well as NEW!",
+      address: '3034 East 4th Street',
+      googleMaps: 'https://www.google.com/maps/dir//el+toribio/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fb011d73196b7:0xb8fdbc069e8546e1?sa=X&ved=2ahUKEwjCsLvh2rTtAhXQZs0KHcBxCWkQ9RcwDXoECBAQBQ',
+      phoneNumber: '270-683-8361',
+      options: 'Curbside Pickup, Delivery, Online Ordering',
+      bigOTakeoutLink: 'https://www.bigotakeout.com/r/73/restaurants/delivery/Mexican/El-Toribio-Mexican-Restaurant-Owensboro',
+      bigOTakeoutLogo: 'big_o_takeout-logo.png'
+    },
+    {
       name: "fetta specialty pizza",
       category: "Pizza",
       website: "http://www.fettaspecialtypizza.com/home.html",
