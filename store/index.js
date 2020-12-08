@@ -108,6 +108,20 @@ export const state = () => ({
       options: 'Curbside Pickup, Online Ordering'
     },
     {
+      name: "the creme coffee house",
+      category: "coffee shop",
+      website: "https://thecremecoffeehouse.co",
+      logo: 'the_creme_coffee_house-logo.png',
+      thumbnail: 'the_creme_coffee_house-thumbnail.jpg',
+      description: "We're locally owned and operated, with a warm and inviting atmosphere. Our variety of specialty drinks, delicious treats, and yummy sammiches are all here!",
+      address: '109 East 2nd Street',
+      googleMaps: 'https://www.google.com/maps/dir//the+creme+coffee+house/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fb082eea9578f:0x621ce710e3e6d771?sa=X&ved=2ahUKEwi5jKXFo7_tAhWSHM0KHTwVBqgQ9RcwC3oECBAQBA',
+      phoneNumber: '270-683-7787',
+      options: 'Curbside Pickup, Online Ordering',
+      doordashLink: 'https://thecremecoffeehouse.co/menu/',
+      doordashLogo: 'doordash-logo.png'
+    },
+    {
       name: "dee's diner",
       category: 'Diner',
       website: "",
