@@ -53,7 +53,7 @@ export default {
         gap: 1rem;
         padding: 1rem;
         text-decoration: none;
-        height: 80px;
+        // height: 80px;
         border-bottom: 1px solid rgba(8, 8, 8, 0.05);
 
         &--logo {
