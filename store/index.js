@@ -109,7 +109,7 @@ export const state = () => ({
     },
     {
       name: "the creme coffee house",
-      category: "coffee shop",
+      category: "Coffee Shop",
       website: "https://thecremecoffeehouse.co",
       logo: 'the_creme_coffee_house-logo.png',
       thumbnail: 'the_creme_coffee_house-thumbnail.jpg',
