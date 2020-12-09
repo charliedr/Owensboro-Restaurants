@@ -1,7 +1,40 @@
 <template>
   <div class="restaurantList">
     <h1 class="restaurantList__title">All Restaurants</h1>
-    <ul>
+    <!-- FILTERING -->
+    <div class="restaurantList__filters">
+      <button @click="filterListClear">All</button>
+      <button @click="filterRestaurants" value="American Restaurant">American</button>
+      <button @click="filterRestaurants" value="Asian Restaurant">Asian</button>
+      <button @click="filterRestaurants" value="Bakery & Cafe">Bakery & Cafe</button>
+      <button @click="filterRestaurants" value="Bar & Grill">Bar & Grill</button>
+      <button @click="filterRestaurants" value="Barbecue Restaurant">Bar-B-Q</button>
+      <button @click="filterRestaurants" value="Diner">Diner</button>
+      <button @click="filterRestaurants" value="Coffee Shop">Coffee</button>
+      <button @click="filterRestaurants" value="Fine Dining">Fine Dining</button>
+      <button @click="filterRestaurants" value="Hamburger Restaurant">Hamburger</button>
+      <button @click="filterRestaurants" value="Italian Restaurant">Italian</button>
+      <button @click="filterRestaurants" value="Mexican Restaurant">Mexican</button>
+      <button @click="filterRestaurants" value="Pizza">Pizza</button>
+      <button @click="filterRestaurants" value="Seafood Restaurant">Seafood</button>
+      <button @click="filterRestaurants" value="Steak House">Steak House</button>
+      <button @click="filterRestaurants" value="Thai Restaurant">Thai</button>
+    </div>
+    <!-- <p>{{ filteredList }}</p> -->
+    <ul v-if="filteredListVisible">
+      <li v-for="restaurant in filteredList" :key="restaurant.name">
+        <NuxtLink class="restaurantList__item" :to="`/restaurant/${restaurant.name}`">
+          <img class="restaurantList__item--logo" :src="`${restaurant.logo}`" style="width: 3rem; height: auto;">
+          <div class="restaurantList__item--content">
+            <div class="restaurantList__item--content-title">{{ restaurant.name }}</div>
+            <div class="restaurantList__item--content-category">{{ restaurant.category }}</div>
+          </div>
+          <img class="chevron-right" src="~assets/chevron-right.svg" alt="right arrow icon">
+        </NuxtLink>
+      </li>
+    </ul>
+    <!-- LIST -->
+    <ul v-else>
       <li v-for="restaurant in restaurants" :key="restaurant.name">
         <NuxtLink class="restaurantList__item" :to="`/restaurant/${restaurant.name}`">
           <img class="restaurantList__item--logo" :src="`${restaurant.logo}`" style="width: 3rem; height: auto;">
@@ -20,11 +53,30 @@
 import {mapState} from 'vuex'
 
 export default {
+  data() {
+    return {
+      filteredList: [],
+      filteredListVisible: false
+    }
+  },
+  methods: {
+    filterRestaurants(e) {
+      console.log('Filtering for:', e.target.value)
+      // Filters restaurants if the value of the button equals the restaurant's category
+      const filtered = this.restaurants.filter((restaurant) => restaurant.category === e.target.value)
+      this.filteredList = filtered
+      this.filteredListVisible = true
+    },
+    filterListClear() {
+      this.filteredListVisible = false
+    }
+  },
   computed: {
     // Pull information from the store
     ...mapState({
       restaurants: state => state.restaurants
-    })
+    }),
+
   }
 }
 </script>
@@ -40,6 +92,28 @@ export default {
       margin-bottom: 1rem;
       border-left: .25rem solid #1D3557;
       padding-left: .5rem;
+    }
+
+    &__filters {
+      margin-bottom: .5rem;
+
+      button {
+        display: inline-block;
+        font-size: 14px;
+        padding: .25rem .75rem;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.14);
+        margin-bottom: .5rem;
+        border-radius: .75rem;
+        transition: all .2s ease-in-out;
+        outline: none;
+
+        &:hover, &:focus {
+          cursor: pointer;
+          background: #1D3557;
+          color: #ffffff;
+        }
+      }
     }
 
     ul {

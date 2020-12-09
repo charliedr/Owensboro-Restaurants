@@ -13,7 +13,7 @@ export const state = () => ({
   restaurants: [
     {
       name: "big dipper",
-      category: "Fast Food",
+      category: "Hamburger Restaurant",
       website: "",
       logo: 'big_dipper-logo.jpg',
       thumbnail: 'big_dipper-thumbnail.jpg',
@@ -357,7 +357,7 @@ export const state = () => ({
     },
     {
       name: "peezo's pizza",
-      category: "Pizza Restaurant",
+      category: "Pizza",
       website: "http://peezos-pizza.jany.io/",
       logo: 'peezos_pizza-logo.jpg',
       thumbnail: 'peezos_pizza-thumbnail.jpg',
