@@ -67,7 +67,7 @@ export const state = () => ({
     },
     {
       name: "bubba gandy",
-      category: "seafood",
+      category: "Seafood",
       website: "https://www.bubbagandyowensboro.com/",
       logo: 'bubba_gandy-logo.jpg',
       thumbnail: 'bubba_gandy-thumbnail.jpg',
