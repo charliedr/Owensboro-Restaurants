@@ -66,6 +66,20 @@ export const state = () => ({
       options: 'Carry-Out'
     },
     {
+      name: "bubba gandy",
+      category: "seafood",
+      website: "https://www.bubbagandyowensboro.com/",
+      logo: 'bubba_gandy-logo.jpg',
+      thumbnail: 'briarpatch-thumbnail.jpg',
+      description: "Bubba Gandy Seafood Cajun Market is here to provide Owensboro with Florida-fresh seafood. We provide superior options with zero additives.",
+      address: '3600 Frederica Street Suite K',
+      googleMaps: "https://www.google.com/maps/dir//owensboro+bubba+gandy's/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fbbfb64b47233:0x7bea2e6f4f8e3cf2?sa=X&ved=2ahUKEwjhy_DfxsHtAhUL2VkKHd18Ca8Q9RcwC3oECBkQBQ",
+      phoneNumber: '270-240-1016',
+      options: 'Carry-Out, Online Ordering',
+      doordashLink: 'https://www.doordash.com/store/bubba-gandy-seafood-owensboro-797331/en-US',
+      doordashLogo: 'doordash-logo.png'
+    },
+    {
       name: "carnival cafe",
       category: "Restaurant",
       website: "",
