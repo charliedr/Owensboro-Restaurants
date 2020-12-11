@@ -327,7 +327,7 @@ export const state = () => ({
       website: "",
       logo: 'owensboro_karen-logo.jpg',
       thumbnail: 'owensboro_karen-thumbnail.jpg',
-      description: "BBQ restaurant serving mutton, burgoo, fried chicken & catfish in a cozy, country-style setting.",
+      description: "",
       address: '7046 KY-56',
       googleMaps: "https://www.google.com/maps/dir//owensboro+karen/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fc7b36512258b:0x43f0e9d2e6496f83?sa=X&ved=2ahUKEwiBy8y20artAhXKxFkKHbAABVQQ9RcwDHoECBEQBA",
       phoneNumber: '270-344-0706',
