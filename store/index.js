@@ -413,7 +413,7 @@ export const state = () => ({
     },
     {
       name: "thai food owensboro",
-      category: "Thai Restaurant",
+      category: "Asian Restaurant",
       website: "https://thaifoodowensboro.com/",
       logo: 'thai_food_owensboro-logo.jpg',
       thumbnail: 'thai_food_owensboro-thumbnail.jpg',
