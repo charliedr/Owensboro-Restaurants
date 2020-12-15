@@ -18,7 +18,6 @@
       <button @click="filterRestaurants" value="Pizza">Pizza</button>
       <button @click="filterRestaurants" value="Seafood Restaurant">Seafood</button>
       <button @click="filterRestaurants" value="Steak House">Steak House</button>
-      <button @click="filterRestaurants" value="Thai Restaurant">Thai</button>
     </div>
     <!-- <p>{{ filteredList }}</p> -->
     <ul v-if="filteredListVisible">
