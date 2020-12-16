@@ -180,7 +180,7 @@ export const state = () => ({
     {
       name: "fetta specialty pizza",
       category: "Pizza",
-      website: "http://www.fettaspecialtypizza.com/home.html",
+      website: "https://www.fettapizza.net/",
       logo: 'fetta_specialty_pizza-logo.jpg',
       thumbnail: 'fetta_specialty_pizza-thumbnail.jpg',
       description: 'While there are many places that make pizza in Owensboro, Fetta wants to be your hometown pizzeria. We take great pride in our business and our community and the services that we provide to you.  Locally owned and operated, and ready to serve you, Fetta is your home for riverfront entertainment and dining.',
