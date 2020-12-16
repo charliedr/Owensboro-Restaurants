@@ -52,6 +52,9 @@
         <a :href="bigOTakeoutLink" v-if="bigOTakeoutLink">
           <img :src="`../${bigOTakeoutLogo}`" alt="Big O Takeout logo">
         </a>
+        <a :href="cloverLink" v-if="cloverLink">
+          <img :src="`../${cloverLogo}`" alt="Clover logo">
+        </a>
       </div>
     </section>
   </div>
@@ -84,6 +87,8 @@ export default {
       doordashLink: '',
       grubhubLink: '',
       grubhubLogo: '',
+      cloverLink: '',
+      cloverLogo: '',
     }
   },
   computed: {
@@ -114,6 +119,8 @@ export default {
     this.doordashLogo = currentRestaurant[0].doordashLogo
     this.grubhubLink = currentRestaurant[0].grubhubLink
     this.grubhubLogo = currentRestaurant[0].grubhubLogo
+    this.cloverLink = currentRestaurant[0].cloverLink
+    this.cloverLogo = currentRestaurant[0].cloverLogo
 
     console.log(this.$route.params.id)
   },

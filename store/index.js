@@ -188,6 +188,8 @@ export const state = () => ({
       googleMaps: 'https://www.google.com/maps/dir/37.7638672,-87.152262/don+fetta+pizza+owensboro/@37.7673407,-87.1500503,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x886fb09d2ce6c8f1:0xf10e1242c42d4b3!2m2!1d-87.1126318!2d37.7752961',
       phoneNumber: '270-926-0005',
       options: 'Curbside Pickup, Online Ordering',
+      cloverLink: 'https://www.clover.com/online-ordering/fetta-specialty-pizza--owensboro#FEFGYPJT24GJE',
+      cloverLogo: 'cloverLogo.jpg',
       bigOTakeoutLink: 'https://www.bigotakeout.com/r/12/restaurants/delivery/Pizza/Fetta-Specialty-Pizza-Spirit-Owensboro',
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
