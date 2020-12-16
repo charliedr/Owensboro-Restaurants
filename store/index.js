@@ -189,7 +189,7 @@ export const state = () => ({
       phoneNumber: '270-926-0005',
       options: 'Curbside Pickup, Online Ordering',
       cloverLink: 'https://www.clover.com/online-ordering/fetta-specialty-pizza--owensboro#FEFGYPJT24GJE',
-      cloverLogo: 'cloverLogo.jpg',
+      cloverLogo: 'clover-logo.jpg',
       bigOTakeoutLink: 'https://www.bigotakeout.com/r/12/restaurants/delivery/Pizza/Fetta-Specialty-Pizza-Spirit-Owensboro',
       bigOTakeoutLogo: 'big_o_takeout-logo.png'
     },
