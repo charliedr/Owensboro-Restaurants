@@ -381,7 +381,9 @@ export const state = () => ({
       address: '2100 West 2nd Street',
       googleMaps: "https://www.google.com/maps/dir//peezo's+pizza/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x886fbbf0bad9aa75:0xeee60ade72d159?sa=X&ved=2ahUKEwj927PZ2KrtAhVZZM0KHaycDVwQ9RcwC3oECBEQBA",
       phoneNumber: '270-478-4098',
-      options: 'Carry-Out'
+      options: 'Carry-Out',
+      grubhubLink: 'https://www.grubhub.com/restaurant/peezos-pizza-2100-west-2nd-street-owensboro/2432919',
+      grubhubLogo: 'grubhub-logo.png'
     },
     {
       name: "real hacienda",
